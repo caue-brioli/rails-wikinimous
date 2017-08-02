@@ -1,0 +1,7 @@
+<ul>
+  <% @article.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %></li>
+    <p><%= article.content %></p>
+    <a href="#" class="btn btn-primary">blabla</a>
+  <%end%>
+</ul>
